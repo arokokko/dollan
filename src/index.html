@@ -5,33 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOLLAN COIN</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header class="header">
-        <div class="logo">
-            <img src="./img/logo.png" alt="логотип Dollan">
-            <h1 class="titleH1">dollan</h1>
+        <div class="container">
+            <div class="header__wrapper">
+                <a class="logo">
+                    <img src="./img/logo.png" alt="логотип Dollan">
+                    <h1 class="titleH1 logo__title">dollan</h1>
+                </a>
+                <nav>
+                    <ul class="menu">
+                        <li class="menu__item"><a href="#">кошельки</a></li>
+                        <li class="menu__item"><a href="#">что такое dollan?</a></li>
+                        <li class="menu__item menu__item-btn_outer"><a type="button" href="#" class=" menu__item-btn">начать пользоваться</a></li>
+                        <li class="menu__item"><a href="">тех поддержка</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-        <nav>
-            <ul class="menu">
-                <li class="menu__item"><a href="#">кошельки</a></li>
-                <li class="menu__item"><a href="#">что такое dollan?</a></li>
-                <li class="menu__item"><a type="button" href="#">начать пользоваться</a></li>
-                <li class="menu__item"><a href="">тех поддержка</a></li>
-            </ul>
-        </nav>
     </header>
     <main class="main">
-        <div class="art-int_trigger">
-            <img src="./img/artint.png" alt="искусственный интеллект">
-            <button type="button">Искусственный интеллект Dollan</button>
-        </div>
-        <div class="main__wrapper">
-            <div class="titleH2">Стать счастливым сегодня!</div>
-            <div class="main__descr">Токен Dollan является криптовалютой, построенной на платформе крупнейшей криптовалютной биржи Binance.</div>
-            <button class="main__video">Смотреть видео</button>
-            <img src="./img/iphone.png" alt="айфон" class="main__img">
+        <div class="container">
+            <!-- <div class="art-int_trigger">
+                <img src="./img/artint.png" alt="искусственный интеллект">
+                <button type="button">Искусственный интеллект Dollan</button>
+            </div> -->
+            <div class="main__wrapper">
+                <div class="titleH2 main__titleH2">Стать счастливым сегодня!</div>
+                <div class="main__descr">Токен Dollan является криптовалютой,<br> построенной на платформе крупнейшей криптовалютной биржи Binance.</div>
+                <button class="main__video">Смотреть видео</button>
+                <img src="./img/iphone.png" alt="айфон" class="main__img">
+            </div>
         </div>
     </main>
+
+    <script src="./js/script.js"></script>
 </body>
 </html>

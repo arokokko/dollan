@@ -1,0 +1,68 @@
+.main {
+    margin-top: -2.5rem;
+    min-height: 100vh;
+    background: url(../img/main_background.png) top center / cover no-repeat;
+    padding-top: 8.5rem;
+    // min-height: calc(100vh + 2.5rem);
+    overflow: hidden;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__titleH2 {
+        margin-top: 3rem;
+        font-size: 2.5rem;
+    }
+
+    &__descr {
+        font-size: 1.4rem;
+        margin-top: 1rem;
+        text-align: center;
+
+    }
+    &__video {
+        margin-top: 10rem;
+        margin-bottom: 28rem;
+        padding: 1rem 2rem 1rem 3.5rem;
+        border-radius: 5rem;
+        position: relative;
+        background: $light;
+        color: $dark-blue;
+        border: .1rem solid rgba($dark-blue, .5);
+        transition: all .4s;
+        z-index: 1;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 2rem;
+            border-bottom: .5rem solid transparent;
+            border-top: .5rem solid transparent;
+            border-left: .8rem solid $dark-blue;
+            width: 0;
+            height: 0;
+
+
+        }
+        &:hover {
+            box-shadow: 0 1rem 1.5rem 0 rgba($aquamarine, 0.45);
+                    
+                
+        }
+    }
+
+    &__img {
+        max-width: 24rem;
+        position: absolute;
+        bottom: -38%;
+        z-index: 1;
+        // margin-bottom: -50%;
+        // transform: translateY(45%);
+    }
+}
