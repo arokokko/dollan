@@ -16,3 +16,12 @@
     font-weight: 700;
     text-transform: uppercase;
 }
+
+@media(max-width: 576px) {
+    .titleH2 {
+        font-size: 2.2rem;
+    }
+    .titleH3 {
+        font-size: 1.8rem;
+    }
+}

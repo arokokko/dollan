@@ -1,5 +1,4 @@
 .map {
-    // min-height: 100vh;
     background: white;
     padding-top: 6rem;
     padding-bottom: 4rem;
@@ -15,7 +14,42 @@
     }
 
     &__descr {
-        margin-top: 3rem;
+        
         font-size: 1.5rem;
+    }
+    &__descr:not(:last-child) {
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media(max-width: 575px) {
+    .map {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+
+        &__wrapper {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+            text-align: center;
+        }
+    
+        &__descr {
+            font-size: 1.2rem;
+
+            & br {
+                display: none;
+            }
+        }
+        &__descr:not(:last-child) {
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+@media(max-width: 420px) {
+    .map {
+        padding-bottom: 1rem;
     }
 }
