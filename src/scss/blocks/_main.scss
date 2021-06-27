@@ -1,40 +1,51 @@
 .main {
-    margin-top: -2.5rem;
+    margin-top: 6rem;
     min-height: 100vh;
     background: url(../img/main_background.png) top center / cover no-repeat;
-    padding-top: 8.5rem;
-    // min-height: calc(100vh + 2.5rem);
+    // padding-top: 8.5rem;
     overflow: hidden;
+    position: relative;
 
     &__wrapper {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        text-align: center;
+    }
+
+    &__top {
+        margin-top: 3rem;
     }
 
     &__titleH2 {
-        margin-top: 3rem;
         font-size: 2.5rem;
     }
 
     &__descr {
         font-size: 1.4rem;
         margin-top: 1rem;
-        text-align: center;
+    }
 
+    &__bottom {
+        margin-top: 12rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: -18rem;
+        
     }
     &__video {
-        margin-top: 10rem;
-        margin-bottom: 28rem;
+        
+        margin-bottom: 2.5rem;
         padding: 1rem 2rem 1rem 3.5rem;
         border-radius: 5rem;
         position: relative;
+        z-index: 1;
         background: $light;
         color: $dark-blue;
         border: .1rem solid rgba($dark-blue, .5);
         transition: all .4s;
-        z-index: 1;
 
         &::before {
             content: "";
@@ -48,21 +59,125 @@
             width: 0;
             height: 0;
 
-
+            
         }
         &:hover {
             box-shadow: 0 1rem 1.5rem 0 rgba($aquamarine, 0.45);
-                    
-                
+              
         }
     }
 
     &__img {
-        max-width: 24rem;
-        position: absolute;
-        bottom: -38%;
-        z-index: 1;
-        // margin-bottom: -50%;
-        // transform: translateY(45%);
+        width: 21rem;
     }
+}
+
+.art-int{
+    &_trigger {
+        position: absolute;
+        top: 2rem;
+        right: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        z-index: 1;
+        cursor: pointer;
+        transition: all .4s;
+
+        &:hover {
+            & > img {
+                transform: scale(1.1);
+            }
+            & > button {
+                box-shadow: .2rem 1rem 1.5rem 0 rgba($dark-blue, .45);
+            }
+        }
+
+        & > img {
+            width: 4.8rem;
+            margin-right: -3.5rem;
+            position: relative;
+            z-index: 2;
+            transition: all .4s;
+        }
+
+        & > button {
+            background: $light;
+            color: $aquamarine;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-style: italic;
+            padding: .6rem 1.5rem .6rem 4rem;
+            transition: all .4s;
+            border-radius: 5rem 0 0 5rem;
+            box-shadow: .2rem .5rem .5rem 0 rgba($dark-blue, .45);
+        }
+    }
+
+}
+
+@media (max-width: 992px) {
+    .main {
+        margin-top: 0;
+        
+    }
+    .art-int{
+        &_trigger {
+            
+            top: 12rem;
+            transform: translateX(75%);
+
+            &:hover {
+                transform: translateX(0);
+            }
+        }
+    }
+}
+@media (max-width: 576px) {
+    .main {
+        margin-top: 0;
+        &__top {
+            margin-top: 2rem;
+        }
+        &__titleH2 {
+            font-size: 2.4rem;
+        }
+        &__descr {
+            font-size: 1.3rem;
+        }
+        &__bottom {
+            margin-top: 8rem;
+        }
+        &__video {
+            padding: 1.5rem 3rem 1.5rem 4.5rem;
+            font-size: 1.4rem;
+        }
+        &__img {
+            width: 19rem;
+        }
+    }
+    .art-int{
+        &_trigger {
+            top: 16rem;
+        }
+    }
+}
+@media (max-width: 420px) {
+    .main {
+        margin-top: 0;
+        &__top {
+            margin-top: 1rem;
+        }
+        &__titleH2 {
+            font-size: 2.2rem;
+        }
+        &__descr {
+            font-size: 1.1rem;
+        }
+        &__bottom {
+            margin-top: 8rem;
+        }
+    }
+    
 }
