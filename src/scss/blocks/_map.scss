@@ -1,0 +1,21 @@
+.map {
+    // min-height: 100vh;
+    background: white;
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+    position: relative;
+    z-index: 3;
+
+
+    &__wrapper {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        width: 100%;
+        background: url(../img/background_map.png) right center / contain no-repeat;
+    }
+
+    &__descr {
+        margin-top: 3rem;
+        font-size: 1.5rem;
+    }
+}

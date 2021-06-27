@@ -1,5 +1,18 @@
 .titleH2 {
     color: $aquamarine;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 700;
+}
+
+.titleH3 {
+    color: $aquamarine;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.titleH4 {
+    color: $dark-blue;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
 }
