@@ -193,6 +193,8 @@ a.menu__item-btn {
                     margin-bottom: .5rem;
                 }
             }
+
+            
         }
         
         &__close {
@@ -220,6 +222,11 @@ a.menu__item-btn {
     .burger {
         display: flex;
     }
+
+    .active .header__wrapper {
+        transform: translateX(0);
+    }
+    
 }
 @media (max-width: 420px) {
     .header {

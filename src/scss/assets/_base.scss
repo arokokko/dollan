@@ -150,3 +150,16 @@ hr {
         width: 90vw;
     }
 }
+
+@media(max-width: 786px) {
+    .privacy-policy {
+    
+        & .privacy-policy__wrapper {
+            
+            width: 95vw; 
+        }
+        & h2 {
+            font-size: 1.3rem;
+        }
+    } 
+}
