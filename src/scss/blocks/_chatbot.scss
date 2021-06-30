@@ -1,0 +1,25 @@
+.justwidget {
+    &--asst-pic {
+        cursor: pointer;
+    }
+    & .justwidget--headline h2  { 
+        font-family: 'Montserrat', sans-serif !important;
+        text-transform: uppercase;
+        letter-spacing: .2rem;
+    }
+    
+    & .justwidget--message_content  .justwidget--lineHeightNormal,
+    & .justwidget--message_content *,
+    & .justwidget--button span,
+    & .justwidget--history,
+    & .justwidget--text {
+        font-family: 'Montserrat', sans-serif !important;
+        color: $dark-blue !important;
+        
+    }
+    & .justwidget--button {
+        border: 1px solid rgba($dark-blue, .8);
+    }
+
+    
+}
