@@ -91,18 +91,14 @@
                 background: linear-gradient(to bottom, #87bdcf, $dark-blue);
                 margin: 0 1.5rem;
                 border-radius: 5rem;
-                transition: all 1s;
+                transition: all .4s;
 
                 &:hover {
+                    
                     box-shadow: 0 1rem 1.5rem 0 rgba(#87bdcf, 0.45);
-                    // background: linear-gradient(to top, #87bdcf, $dark-blue);
                 }
-            }
-
-            // &:hover {
-            //     box-shadow: 0 1rem 1.5rem 0 rgba($dark-blue, 0.55);
                 
-            // }
+            }
             
         }
     }
@@ -113,6 +109,9 @@ a.menu__item-btn {
 
     &:hover {
         color: $aquamarine;
+    }
+    &:active {
+        color: $dark-blue;
     }
 }
 .burger {

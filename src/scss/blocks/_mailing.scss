@@ -35,9 +35,14 @@
             transition: all .4s;
 
             &:hover {
-                // box-shadow: 0 1rem 1rem 0 rgba($aquamarine, .45); 
+                
                 color: $goldy;
             }
+            &:active {
+                
+                background: rgba($aquamarine, .7);
+            }
+            
         }
     }
     &__promise {
